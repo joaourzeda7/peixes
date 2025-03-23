@@ -27,7 +27,7 @@ def sobre():
         return "Erro ao carregar a página", 500
 
 # Página de aparições recentes
-@app.route('/aparições')
+@app.route('/aparicoes')
 def aparições():
     try:
         return render_template('aparições.html')

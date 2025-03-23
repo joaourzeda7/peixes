@@ -28,9 +28,9 @@ def sobre():
 
 # Página de aparições recentes
 @app.route('/aparicoes')
-def aparições():
+def aparicoes():
     try:
-        return render_template('aparições.html')
+        return render_template('aparicoes.html')
     except Exception as e:
         logger.error(f"Erro ao carregar a página 'Aparições': {e}")
         return "Erro ao carregar a página", 500
